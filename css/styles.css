@@ -477,7 +477,7 @@ mark,
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  height: 300px;
 }
 
 .img-thumbnail {
@@ -5801,7 +5801,23 @@ a.close.disabled {
 }
 
 .carousel {
-  position: relative;
+  /*position: relative; */
+  display: block;
+  height: 40%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto }
+}
+
+div.c-wrapper{
+    width: 80%; /* for example */
+    margin: auto;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img{
+  width: 100%; /* use this, or not */
+  margin: auto;
 }
 
 .carousel.pointer-event {
@@ -5825,6 +5841,7 @@ a.close.disabled {
   float: left;
   width: 100%;
   margin-right: -100%;
+  object-fit: fill;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
@@ -5969,14 +5986,15 @@ a.close.disabled {
 
 .carousel-caption {
   position: absolute;
-  right: 15%;
+  right: 0.5%;
+  left: 0.5%;
   bottom: 20px;
-  left: 15%;
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
   text-align: center;
+  background-color: rgba(46, 49, 49, 0.65);
 }
 
 @-webkit-keyframes spinner-border {
@@ -6062,7 +6080,7 @@ a.close.disabled {
   vertical-align: text-bottom !important;
 }
 
-.align-text-top {
+.align-carouseltext-top {
   vertical-align: text-top !important;
 }
 
@@ -9980,7 +9998,7 @@ hr.light {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
 #mainNav {
