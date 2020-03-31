@@ -4,9 +4,28 @@
 
 img { width: 100%; height: auto; }
 
+.logo {
+  font-size: 2.5em;
+}
+
+.logo_i {
+  font-size: 3.4em;
+  color: #f4623a;
+  opacity: 0.9;
+  transition: color 0.2s ease;
+}
 
 .carousel-inner img {
   margin: auto;
+}
+
+.taking {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.text-white-75 {
+  padding-bottom: 2px;
 }
 
 form {
